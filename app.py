@@ -9,9 +9,9 @@ import matplotlib.pyplot as plt
 
 # Download NLTK Dtaa 
 
-# nltk.download('punkt')
-# nltk.download('wordnet')
-# nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('wordnet')
+nltk.download('stopwords')
 
 # Initilaizxe NlTJK tool
 
