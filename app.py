@@ -67,7 +67,7 @@ st.markdown(
             "Text Normalization & WordCloud</p>",
             unsafe_allow_html=True
         )
-input_text = st.text_area("Enter The Text in the input filed and choose the operation you want to perform",height=150)
+input_text = st.text_area("Enter The Text in the input filed and choose the operation you want to perform",height=100)
 
 tokens = word_tokenize(input_text) if input_text else []
 
@@ -104,8 +104,8 @@ if stem_checkbox and input_text:
 # Generate WordCloud 
 
 if generate_wordcloud_checkbox and input_text:
-    wordcloud = WordCloud(width=200, height=100, margin=2, background_color='black',colormap='Accent',mode='RGBA').generate(input_text)
-    fig, ax = plt.subplots(figsize=(10, 5))
+    wordcloud = WordCloud(width=600, height=300, margin=2, background_color='black',colormap='Accent',mode='RGBA').generate(input_text)
+    fig, ax = plt.subplots(figsize=(4, 2))
     ax.imshow(wordcloud, interpolation="bilinear")
     ax.axis("off")
 
