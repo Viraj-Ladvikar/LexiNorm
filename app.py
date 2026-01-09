@@ -7,11 +7,14 @@ from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 
 
-# Download NLTK Dtaa 
+@st.cache_resource
+def download_nltk_data():
+    nltk.download("punkt")
+    nltk.download("punkt_tab")
+    nltk.download("stopwords")
+    nltk.download("wordnet")
 
-nltk.download('punkt')
-nltk.download('wordnet')
-nltk.download('stopwords')
+download_nltk_data()
 
 # Initilaizxe NlTJK tool
 
