@@ -30,7 +30,7 @@ The goal of this project is to:
 * Clean Streamlit UI with sidebar controls
 
 ---
-
+🔗 Live Demo Link : https://lexinorm-nlp-basic.streamlit.app/
 ## 🛠 Tech Stack
 
 * Python
